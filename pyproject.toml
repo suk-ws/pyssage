@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "pyssage"
+version = "0.1.0"
+description = "A simple but complex imformation io (logging/console-input) api & implementation: the Python version (original project messiva is for Java)."
+authors = ["ANNIe Eyre <sukazyo@outlook.com>"]
+readme = "README.md"
+
+packages = [
+	{ include = "pyssage" }
+]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
