@@ -1,3 +1,8 @@
 {
-	"python.analysis.typeCheckingMode": "strict"
+	"python.analysis.typeCheckingMode": "strict",
+	"python.analysis.diagnosticMode": "workspace",
+	"python.analysis.extraPaths": [
+		"{workspaceFolder}/pyssage"
+	],
+	"python.languageServer": "Pylance"
 }
