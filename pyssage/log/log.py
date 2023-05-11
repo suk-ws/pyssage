@@ -13,7 +13,25 @@ class LogLevel:
 		
 	
 	def __str__(self) -> str:
+		return self.__repr__()
+	
+	def __repr__(self) -> str:
 		return f"<{self.tag}({self.level})>"
+	
+	def __eq__(self, __value: object) -> bool:
+		return isinstance(__value, LogLevel) and self.level == __value.level
+	
+	def __gt__(self, __value: object) -> bool:
+		return isinstance(__value, LogLevel) and self.level > __value.level
+	
+	def __lt__(self, __value: object) -> bool:
+		return isinstance(__value, LogLevel) and self.level < __value.level
+	
+	def __ge__(self, __value: object) -> bool:
+		return isinstance(__value, LogLevel) and self.level >= __value.level
+	
+	def __le__(self, __value: object) -> bool:
+		return isinstance(__value, LogLevel) and self.level <= __value.level
 	
 
 class levels:
